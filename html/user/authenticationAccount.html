@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>实名认证</title>
+    <link rel="stylesheet"type="text/css" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet"type="text/css" href="../../css/bootstrap-theme.min.css">
+
+    <link rel="stylesheet"type="text/css" href="../../css/reset.css">
+    <link rel="stylesheet"type="text/css" href="../../css/common.css">
+    <link rel="stylesheet"type="text/css" href="../../css/userLeftNav.css">
+    <link rel="stylesheet"type="text/css" href="../../css/userCenter.css">
+    <link rel="stylesheet"type="text/css" href="../../css/authenticationAccount.css">
+    <script type="text/javascript" src="../../js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="../../js/userLeftNav.js"></script>
+    <script type="text/javascript" src="../../js/userCenter.js"></script>
+    <script type="text/javascript" src="../../js/layer/layer.js"></script>
+</head>
+<body>
+    <div class="public-header">
+        <div class="public-container clearfloat">
+            <div class="header-logo left-float"><a href="#"><img src="../../images/logo.png"></a></div>
+            <ul class="header-nav clearfloat">
+                <!--导航栏-->
+                <li class="item left-float"><a class="nav-link first-link" href="#">首页</a></li>
+                <li class="item left-float"><a class="nav-link" href="#">租车</a></li>
+                <li class="item left-float"><a class="nav-link" href="#">租私家车</a></li>
+                <li class="item left-float"><a class="nav-link" href="#">我有车辆</a></li>
+                <li class="item left-float"><a class="nav-link" href="#">以租代购</a></li>
+                <li class="item left-float"><a class="nav-link" href="#">门店</a></li>
+
+                <!--未登录-->
+                <!--<li class="item right-float">
+                    <a class="nav-link regist-link" href="#">注册</a><span class="slash-text">/</span><a class="nav-link login-link" href="#">登录</a>
+                </li>-->
+
+                <!--已登录-->
+                <li class="item right-float"><a class="nav-link mycargo-link" href="#">我的Cargo</a></li>
+                <li class="item right-float"><span class="hello-text">您好，陈***</span></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="public-container clearfloat">
+            <!-- 左边导航 -->
+            <div class="left-nav left-float">
+                <dl>
+                    <dt class="nav-title">我的订单</dt>
+                    <a href="javascript:void(0)" onclick="changeNav(this);"><dd class="nav-text active">租车</dd></a>
+                    <a href="javascript:void(0)" onclick="changeNav(this);"><dd class="nav-text">出租</dd></a>
+                    <dt class="nav-title">我的车辆</dt>
+                    <dt class="nav-title">我的账户</dt>
+                    <a href="javascript:void(0)" onclick="changeNav(this);"><dd class="nav-text improve-text">登录信息完善</dd></a>
+                    <a href="javascript:void(0)" onclick="changeNav(this);"><dd class="nav-text auth-text">身份认证</dd></a>
+                    <a href="javascript:void(0)" onclick="changeNav(this);"><dd class="nav-text">修改密码</dd></a>
+                    <dt class="nav-title">我的消息</dt>
+                </dl>
+            </div>
+            <!-- 右边内容 -->
+            <div class="right-content left-float">
+                <dl>
+                    <table>
+                        <dt class="content-title">实名认证 </dt>
+                        <dd class="content-input-box">
+                            <span class="content-text">姓名</span><!--
+                             --><input class="content-input" placeholder="请输入姓名"><!--
+                             --><span class="content-error">姓名错误</span><!--
+                             --><a class="content-link" href="javascript:void(0)" onclick="openEditName();">修改</a>
+                            <!--<a class="content-link" href="#">保存</a>-->
+                        </dd>
+                        <dd class="content-input-box">
+                            <span class="content-text">性别</span><!--
+                             --><div class="content-input-radio"><input id="m-sex" type="radio" name="sex" checked><label class="sex-text"  for="m-sex">&nbsp;男</label></div><!--
+                            --><div class="content-input-radio"><input id="fm-sex" type="radio" name="sex"><label class="sex-text" for="fm-sex">&nbsp;女</label></div><!--
+                            --><span class="content-error">性别错误</span><!--
+                             --><a class="content-link" href="javascript:void(0)" onclick="openEditSex();">修改</a>
+                            <!--<a class="content-link" href="#">保存</a>-->
+                        </dd>
+                        <dd class="content-input-box">
+                            <span class="content-text">身份证号码</span><!--
+                             --><input class="content-input" placeholder="请输入身份证号码"><!--
+                             --><span class="content-error">身份证号码格式错误</span><!--
+                             --><a class="content-link" href="javascript:void(0)" onclick="openEditIdCard();">修改</a>
+                            <!--<a class="content-link" href="#">保存</a>-->
+                        </dd>
+                    </table>
+                </dl>
+            </div>
+            <!-- 右边内容 -->
+            <div class="right-content right-content-second left-float">
+                <dl>
+                    <table>
+                        <dt class="content-title">证件上传</dt>
+                        <dd class="content-input-box">
+                            <span class="content-text">身份证正面</span><!--
+                             --><input class="content-input" placeholder="未完待续"><!--
+                             --><span class="content-error">未完待续</span><!--
+                             --><a class="content-link" href="javascript:void(0)" onclick="openEditName();">修改</a>
+                            <!--<a class="content-link" href="#">保存</a>-->
+                        </dd>
+                        <dd class="content-input-box">
+                            <span class="content-text">驾驶证正面</span><!--
+                             --><input class="content-input" placeholder="未完待续"><!--
+                             --><span class="content-error">未完待续</span><!--
+                             --><a class="content-link" href="javascript:void(0)" onclick="openEditName();">修改</a>
+                            <!--<a class="content-link" href="#">保存</a>-->
+                        </dd>
+                        <dd class="content-input-box">
+                            <span class="content-text">驾驶证副页</span><!--
+                             --><input class="content-input" placeholder="未完待续"><!--
+                             --><span class="content-error">未完待续</span><!--
+                             --><a class="content-link" href="javascript:void(0)" onclick="openEditName();">修改</a>
+                            <!--<a class="content-link" href="#">保存</a>-->
+                        </dd>
+                    </table>
+                </dl>
+            </div>
+        </div>
+    </div>
+
+    <div class="public-footer">
+        <div class="public-container">
+            <div class="copyright-text">Copyright©2008-2018 www.cargo.com All Rights Reserved. Cargo汽车租赁有限公司 粤ICP备10005002号 粤公网安备号 11010502026705</div>
+        </div>
+    </div>
+
+    <script>
+    $(function () {
+        $(".nav-text").removeClass("active");
+        $(".auth-text").addClass("active");
+    });
+
+    /**
+     * 打开修改姓名框
+     */
+    function openEditName() {
+        // 修改姓名
+        layer.open({
+            title: '修改姓名',
+            type: 1,
+            closeBtn: 1,  // 调试用
+            area: ['480px', '220px'], //宽高
+            content: '<div class="dialog-content">' +
+                        '<span class="dialog-span">姓名</span>' +
+                        '<input class="dialog-input" placeholder="请输入姓名"><br/>' +
+                        '<span class="red-text dialog-error">姓名格式错误</span><br/>' +
+                        '<input class="dialog-btn" type="submit" value="修改">' +
+                     '</div>'
+        });
+    }
+
+    /**
+     * 打开修改性别框
+     */
+    function openEditSex() {
+        // 修改性别
+        layer.open({
+            title: '修改性别',
+            type: 1,
+            closeBtn: 1,  // 调试用
+            area: ['480px', '170px'], //宽高
+            content: '<div class="dialog-content">' +
+            '<span class="dialog-span">性别</span>' +
+            '<div class="dialog-input-radio"><input id="d-m-sex" type="radio" name="sex" checked><label class="sex-text" for="d-m-sex">&nbsp;男</label></div>' +
+            '<div class="dialog-input-radio"><input id="d-fm-sex" type="radio" name="sex"><label class="sex-text" for="d-fm-sex">&nbsp;女</label></div>' +
+            '<input class="dialog-btn" type="submit" value="修改">' +
+            '</div>'
+        });
+    }
+
+    /**
+     * 打开修改身份证号码框
+     */
+    function openEditIdCard() {
+        // 修改身份证号码
+        layer.open({
+            title: '修改身份证号码',
+            type: 1,
+            closeBtn: 1,  // 调试用
+            area: ['480px', '220px'], //宽高
+            content: '<div class="dialog-content">' +
+            '<span class="dialog-span">身份证号码</span>' +
+            '<input class="dialog-input" placeholder="请输入身份证号码"><br/>' +
+            '<span class="red-text dialog-error">身份证号码格式错误</span><br/>' +
+            '<input class="dialog-btn" type="submit" value="修改">' +
+            '</div>'
+        });
+    }
+    </script>
+</body>
+</html>
