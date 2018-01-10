@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="22cacc0c-7bba-4970-a239-8a0b30182dbb" name="Default" comment="" />
+    <list default="true" id="22cacc0c-7bba-4970-a239-8a0b30182dbb" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/html/system/menu.html" afterPath="$PROJECT_DIR$/html/system/menu.html" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -17,10 +21,10 @@
       <file leaf-file-name="menu.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/html/system/menu.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="386">
-              <caret line="69" column="5" lean-forward="false" selection-start-line="69" selection-start-column="5" selection-end-line="69" selection-end-column="5" />
+            <state relative-caret-position="406">
+              <caret line="70" column="13" lean-forward="false" selection-start-line="70" selection-start-column="13" selection-end-line="70" selection-end-column="13" />
               <folding>
-                <marker date="1515467781954" expanded="true" signature="2833:2856" ph="..." />
+                <marker date="1515560793368" expanded="true" signature="2833:2856" ph="..." />
               </folding>
             </state>
           </provider>
@@ -29,7 +33,7 @@
       <file leaf-file-name="renterList.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/system/renterList.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1155">
+            <state relative-caret-position="21">
               <caret line="55" column="95" lean-forward="false" selection-start-line="55" selection-start-column="90" selection-end-line="55" selection-end-column="95" />
               <folding />
             </state>
@@ -39,8 +43,8 @@
       <file leaf-file-name="carList.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/system/carList.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3969">
-              <caret line="189" column="59" lean-forward="false" selection-start-line="189" selection-start-column="59" selection-end-line="189" selection-end-column="59" />
+            <state relative-caret-position="4179">
+              <caret line="199" column="43" lean-forward="false" selection-start-line="199" selection-start-column="43" selection-end-line="199" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -83,6 +87,9 @@
       <find>javascript</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -118,11 +125,11 @@
         <option value="$PROJECT_DIR$/html/customer/carList.html" />
         <option value="$PROJECT_DIR$/html/system/userList.html" />
         <option value="$PROJECT_DIR$/css/system/userList.css" />
-        <option value="$PROJECT_DIR$/html/system/menu.html" />
         <option value="$PROJECT_DIR$/css/system/carList.css" />
         <option value="$PROJECT_DIR$/html/system/renterList.html" />
         <option value="$PROJECT_DIR$/css/reset.css" />
         <option value="$PROJECT_DIR$/html/system/carList.html" />
+        <option value="$PROJECT_DIR$/html/system/menu.html" />
       </list>
     </option>
   </component>
@@ -137,6 +144,9 @@
     <option name="y" value="20" />
     <option name="width" value="1346" />
     <option name="height" value="728" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -274,21 +284,22 @@
       <workItem from="1515372553610" duration="28377000" />
       <workItem from="1515459375905" duration="16356000" />
       <workItem from="1515545202470" duration="812000" />
-      <workItem from="1515547686003" duration="835000" />
+      <workItem from="1515547686003" duration="1663000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="129405000" />
+    <option name="totallyTimeSpent" value="130233000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21303074" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21303074" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -624,14 +635,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/system/renterList.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1155">
-          <caret line="55" column="95" lean-forward="false" selection-start-line="55" selection-start-column="90" selection-end-line="55" selection-end-column="95" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/reset.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -646,20 +649,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/html/system/renterList.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="55" column="95" lean-forward="false" selection-start-line="55" selection-start-column="90" selection-end-line="55" selection-end-column="95" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/html/system/carList.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3969">
-          <caret line="189" column="59" lean-forward="false" selection-start-line="189" selection-start-column="59" selection-end-line="189" selection-end-column="59" />
+        <state relative-caret-position="4179">
+          <caret line="199" column="43" lean-forward="false" selection-start-line="199" selection-start-column="43" selection-end-line="199" selection-end-column="43" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/html/system/menu.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="69" column="5" lean-forward="false" selection-start-line="69" selection-start-column="5" selection-end-line="69" selection-end-column="5" />
+        <state relative-caret-position="406">
+          <caret line="70" column="13" lean-forward="false" selection-start-line="70" selection-start-column="13" selection-end-line="70" selection-end-column="13" />
           <folding>
-            <marker date="1515467781954" expanded="true" signature="2833:2856" ph="..." />
+            <marker date="1515560793368" expanded="true" signature="2833:2856" ph="..." />
           </folding>
         </state>
       </provider>
