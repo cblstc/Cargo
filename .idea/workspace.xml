@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22cacc0c-7bba-4970-a239-8a0b30182dbb" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/css/common/result.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/html/common/result.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/common/fail.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/images/common/success.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/css/common/repeatCommit.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/html/common/repeatCommit.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/images/common/warn.png" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -42,21 +41,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="result.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="result.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/common/result.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-21">
-              <caret line="17" column="39" lean-forward="true" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
+            <state relative-caret-position="231">
+              <caret line="11" column="86" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="11" selection-end-column="86" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="result.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/common/result.css">
+      <file leaf-file-name="repeatCommit.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/html/common/repeatCommit.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" column="20" lean-forward="true" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
+            <state relative-caret-position="294">
+              <caret line="14" column="30" lean-forward="true" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="repeatCommit.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/common/repeatCommit.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="16" column="1" lean-forward="false" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -155,6 +164,8 @@
         <option value="$PROJECT_DIR$/html/user/login.html" />
         <option value="$PROJECT_DIR$/css/common/result.css" />
         <option value="$PROJECT_DIR$/html/common/result.html" />
+        <option value="$PROJECT_DIR$/css/common/repeatCommit.css" />
+        <option value="$PROJECT_DIR$/html/common/repeatCommit.html" />
       </list>
     </option>
   </component>
@@ -222,6 +233,12 @@
               <item name="Cargo" type="b2602c69:ProjectViewProjectNode" />
               <item name="Cargo" type="462c0819:PsiDirectoryNode" />
               <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Cargo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Cargo" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -296,12 +313,12 @@
       <workItem from="1515459375905" duration="16356000" />
       <workItem from="1515545202470" duration="812000" />
       <workItem from="1515547686003" duration="835000" />
-      <workItem from="1515632803767" duration="3041000" />
+      <workItem from="1515632803767" duration="6164000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="147505000" />
+    <option name="totallyTimeSpent" value="150628000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -337,20 +354,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/carList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="13" column="14" lean-forward="true" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/carDetail.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="62" lean-forward="false" selection-start-line="9" selection-start-column="62" selection-end-line="9" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/images/car-conf/sky.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -656,14 +659,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/common/result.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="20" lean-forward="true" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html/user/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
@@ -684,8 +679,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/html/common/result.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-21">
-          <caret line="17" column="39" lean-forward="true" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
+        <state relative-caret-position="231">
+          <caret line="11" column="86" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="11" selection-end-column="86" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/common/result.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="16" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/common/repeatCommit.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="16" column="1" lean-forward="false" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/common/repeatCommit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="14" column="30" lean-forward="true" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
           <folding />
         </state>
       </provider>
