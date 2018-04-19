@@ -73,6 +73,7 @@
                         租期的计算方式：<br/>
                         超过4个小时算一天，例：1天4小时的租期为两天，1天3小时的租期为一天"></i></p>
                 <input type="submit" class="choice-btn" value="立即选车">
+                <!--@Todo 根据门店名称查询门店的信息，然后跳转到carList页面-->
             </div>
         </div>
         </form>
@@ -237,6 +238,9 @@
 
     <script>
         $(function() {
+            // 现在加4个小时
+            // var nowPlusFourHours = new Date((new Date() / 1000 / 3600 + 4) * 1000 * 3600);
+
             $(".rent-time-info").tooltip({
                 content: function() {
                     return $(this).attr('title');
@@ -262,12 +266,12 @@
             $('.return-date-choice').on("changeDate", function () {
                 var getDate = new Date($('.get-date-choice').val());
                 var returnDate = new Date($('.return-date-choice').val());
-                var totalHours = (returnDate - getDate) / 1000 / 3600;
+                var totalHours = (returnDate - getDate) / 1000 / 3600;  // 计算时间间隔：小时
                 alert("TotalHours:"+ totalHours);
-                if (totalHours % 24 > 4)
-                    var totalDays = (totalHours / 24) + 1;
+                if (totalHours % 24 >= 4)
+                    var totalDays = Math.floor(totalHours / 24) + 1;  // 向下取整
                 else
-                    var totalDays = (totalHours / 24);
+                    var totalDays = Math.floor(totalHours / 24);
                 $(".rentdays").text(totalDays);
             });
 
@@ -282,7 +286,7 @@
 
             /* 自定义校验 */
             /* 租车时间限制：不低于4个小时 */
-            jQuery.validator.addMethod("hourLimit", function (value, element) {
+            jQuery.validator.addMethod("returnTimeLimit", function (value, element) {
                 var getDate = new Date($('.get-date-choice').val());
                 var returnDate = new Date(value);
                 var totalHours = (returnDate - getDate) / 1000 / 3600;
@@ -297,10 +301,9 @@
             /* 校验表单 */
             $('#date-choice-form').validate({
                 rules: {
-                    returntime: "hourLimit"
+                    returntime: "returnTimeLimit"
                 }
             });
-
         });
 
         // 打开百度地图
@@ -317,7 +320,7 @@
                 '<button class="btn btn-primary confirmBtn">搜索门店</button>' +
                 '<div class="searchTip">请选择地址并搜索门店，只显示十个最近的门店</div>' +
                 '<div class="storeNameBox">' +
-                '<a href="javascript:void(0)" onclick="selectStore(this);" class="storeName">天河区门店123123123321</a>' +
+                '<a href="javascript:void(0)" onclick="selectStore(this);" class="storeName">天河区门店</a>' +
                 '</div>' +
                 '<div id="searchResultPanel"></div>' +
                 '<div id="allmap"></div>'
@@ -418,7 +421,6 @@
         // 选择门店
         function selectStore(storeNameLink) {
             // alert($(storeNameLink).text());
-            // @Todo 根据门店名称查询门店的信息，然后跳转到carList页面
             $(".storename").val($(storeNameLink).text());
             layer.closeAll();  // 关闭所有窗口
         }

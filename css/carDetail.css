@@ -79,7 +79,7 @@
     height: 30px;
     font-size: 15px;
     font-weight: bold;
-    background: #fabe00;
+    background: #FF4049;
     color: #fff;
     border: 0;
     border-radius: 3%;
@@ -89,7 +89,7 @@
 }
 
 .main-content .order-btn-box .order-btn:hover {
-    background: #FF8650;
+    background: #FF5150;
 }
 
 /*店铺信息*/
