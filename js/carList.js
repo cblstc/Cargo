@@ -8,14 +8,14 @@ function selectPrice(link, minPrice, maxPrice) {
     var div = $(link).find("div").get(0);
     // line初始化灰色
     $(".price-line-common").css("border-bottom", "5px solid #E9EBEE");
-    // 指定line黄色
-    $(div).css("border-bottom", "5px solid #fabe00");
+    // 指定line颜色
+    $(div).css("border-bottom", "5px solid #FF4049");
 
     // 价格初始化灰色
     $(".price-text span").css("color", "#93939E");
     // 指定最低价格和最高价格黄色
-    $(minPrice).css("color", "#fabe00");
-    $(maxPrice).css("color", "#fabe00");
+    $(minPrice).css("color", "#FF4049");
+    $(maxPrice).css("color", "#FF4049");
 }
 
 /**
@@ -27,13 +27,14 @@ function selectBrand(link) {
     // 初始化字体颜色灰色
     $(".brand-name-common").css("color", "#93939e");
     // 指定选中字体黄色
-    $(p).css("color", "#fabe00");
+    $(p).css("color", "#FF4049");
 }
 
 /**
  * 开关切换
  * @param link 链接
  */
+/*
 function switchChange(link) {
     var img = $(link).find("img").get(0);
     if ($(img).attr("alt") == "switch-on") {
@@ -44,4 +45,4 @@ function switchChange(link) {
         $(img).attr("src", "../../images/switch-on.png");
         $(img).attr("alt", "switch-on");
     }
-}
+}*/

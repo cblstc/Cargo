@@ -1,6 +1,11 @@
+body {
+    background: #f2f3f5;
+}
+
 .address-date-choice {
-    height: 128px;
-    border-bottom: 1px solid #e5e5e5;
+    height: 130px;
+    background: #ffffff;
+    margin-top: 20px;
 }
 
 /*地址选择*/
@@ -10,7 +15,8 @@
 }
 
 .address-date-choice .choice-address .choice-address-block {
-    margin-top: 10px;
+    margin-left: 10px;
+    margin-top: 15px;
 }
 
 .address-date-choice .choice-address .address-text, .address-date-choice .choice-date .date-text {
@@ -73,10 +79,10 @@
 }
 
 .address-date-choice .choice-submit .rent-time {
-    margin-top: 14px;
-    text-align: center;
     color: #939a9f;
     font-size: 14px;
+    margin-top: 14px;
+    margin-left: 60px;
 }
 
 .address-date-choice  .choice-submit .choice-btn {
@@ -84,7 +90,7 @@
     height: 40px;
     font-size: 15px;
     font-weight: bold;
-    background: #fabe00;
+    background: #FF4049;
     color: #fff;
     border: 0;
     border-radius: 2%;
@@ -92,7 +98,7 @@
 }
 
 .address-date-choice .choice-submit  .choice-btn:hover {
-    background: #FF8650;
+    background: #FF5150;
 }
 
 /* 中间部分 */
@@ -135,7 +141,7 @@
 }
 
 .car-select .car-filter .car-price .price-line-1 {
-    border-bottom: 5px solid #fabe00;
+    border-bottom: 5px solid #FF4049;
     margin-left: 10px;
 }
 .car-select .car-filter .car-price .price-line-5 {
@@ -177,7 +183,7 @@
 }
 
 .car-select .car-filter .car-brand .brand-name-specify {
-    color: #fabe00;
+    color: #FF4049;
 }
 
 .car-select .car-filter .car-store {
@@ -273,9 +279,9 @@
 .car-select .car-content .single-car .car-gear {
     width: 50px;
     height: 20px;
-    border: 1px solid #FF8650;
+    border: 1px solid #FF5150;
     margin-top: 10px;
-    color: #FF8650;
+    color: #FF5150;
     font-size: 12px;
     line-height: 18px;
     text-align: center;
@@ -299,7 +305,7 @@
 
 .car-select .car-content .single-car .car-price-text {
     font-size: 30px;
-    color: #fabe00;
+    color: #FF4049;
     font-weight: bold;
 }
 
@@ -319,7 +325,7 @@
     height: 50px;
     font-size: 15px;
     font-weight: bold;
-    background: #fabe00;
+    background: #FF4049;
     color: #fff;
     border: 0;
     border-radius: 3%;
@@ -327,5 +333,5 @@
 }
 
 .car-select .car-content .single-car .choice-btn:hover {
-    background: #FF8650;
+    background: #FF5150;
 }
