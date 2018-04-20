@@ -56,12 +56,10 @@
             <div class="price-content">
                 <dl>
                     <dt class="price-title">费用明细</dt>
-                    <dd class="price-text clearfloat"><p class="left-float">车辆租赁费</p><p class="sub-price right-float">&yen;98</p><p class="calc-price right-float">98x2</p></dd>
-                    <dd class="price-text clearfloat"><p class="left-float">基本保险费</p><p class="sub-price right-float">&yen;110</p><p class="calc-price right-float">110x2</p></dd>
-                    <dd class="price-text clearfloat"><p class="left-float"><label for="nodebuct" class="nodebuct-label">不计免赔险（非强制性）</label><input id="nodebuct" type="checkbox"></p><p class="sub-price right-float">&yen;40</p><p class="calc-price right-float">40x2</p></dd>
-                    <dd class="price-text clearfloat"><p class="left-float">手续费</p><p class="sub-price right-float">&yen;20</p></dd>
-                    <dd class="price-text clearfloat"><p class="left-float">合计</p><p class="sub-price right-float">&yen;450</p></dd>
-                    <dd class="total-text clearfloat"><p class="left-float">预付款<span class="real-money">&yen;30</span></p> <button class="submit-btn right-float">提交订单</button></dd>
+                    <dd class="price-text clearfloat"><p class="left-float">车辆租赁费</p><p id="sub-price" class="sub-price right-float">&yen;98</p><p class="calc-price right-float">98x2</p></dd>
+                    <dd class="price-text clearfloat"><p class="left-float">基本保险费</p><p id="sub-insurance" class="sub-price right-float">&yen;110</p><p class="calc-price right-float">110x2</p></dd>
+                    <dd class="price-text clearfloat"><p class="left-float"><label for="nodebuct" class="nodebuct-label">不计免赔险（非强制性）</label><input id="nodebuct" type="checkbox" onclick="calcTotal();"></p><p id="sub-nodebuct" class="sub-price right-float">&yen;40</p><p class="calc-price right-float">40x2</p></dd>
+                    <dd class="total-text clearfloat"><p class="left-float">合计<span id="total-money" class="real-money">&yen;450</span></p> <button class="submit-btn right-float">提交订单</button></dd>
                 </dl>
             </div>
 
@@ -82,11 +80,6 @@
                         你自己不会花一分钱的，如果没有这个不计免赔的话，
                         保险公司只会给你拿一部分，剩下的就只有你自己拿了
                         ，总之，有这个不计免赔，对客户自身是有好处的。为了您的利益，还是非常建议购买的。</dd><br/>
-                    <dt>预付款是什么？预付款怎么退？</dt>
-                    <dd>由于不确定对方是否能够有效接单或是客户是否突然退单，为了双方的利益着想。顾客只需支付低额的
-                    预付款。预付款的退额是有条件的。这些条件都是可以退单的：支付4小时内退单、对方拒单、订单完成。其他
-                    条件原则上是无法退额的，这一点需要注意。
-                    </dd>
                 </dl>
             </div>
         </div>
@@ -96,6 +89,28 @@
     <div class="footer-box"></div>
     <script>
         $(".footer-box").load("../common/public-footer.html");
+    </script>
+
+    <script>
+        $(function() {
+           calcTotal();
+        });
+
+        /* 计算合计 */
+        function calcTotal() {
+            var totalDay = 2;  // @Todo 首先得到天数
+            var subPrice = parseInt($("#sub-price").text().replace(/¥/, "")); // 车辆租赁费/天
+            var subInsurance = parseInt($("#sub-insurance").text().replace(/¥/, ""));  // 基本保险费/天
+            var subNodebuct = 0;  // 不计免赔险
+
+            var isChecked = $("#nodebuct").prop("checked");  // 不计免赔是否选中
+            if (isChecked) {
+                subNodebuct = parseInt($("#sub-nodebuct").text().replace(/¥/, ""));  // 不计免赔险
+            }
+
+            var total = (subPrice + subInsurance + subNodebuct) * totalDay;  // 合计
+            $("#total-money").text("¥" + total);
+        }
     </script>
 </body>
 </html>

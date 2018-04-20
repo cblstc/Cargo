@@ -51,7 +51,7 @@
     height: 30px;
     font-size: 13px;
     font-weight: bold;
-    background: #fabe00;
+    background: #FF4049;
     color: #fff;
     border: 0;
     border-radius: 4%;
@@ -59,7 +59,7 @@
 }
 
 .main-content .car-container .conf-btn:hover {
-    background: #FF8650;
+    background: #FF5150;
 }
 
 .main-content .car-container .date-address-box {
@@ -137,13 +137,13 @@
 
 .main-content .car-container .sub-price {
     font-size: 20px;
-    color: #fabe00;
+    color: #FF4049;
     font-weight: bold;
 }
 
 .main-content .car-container .real-money {
     font-size: 20px;
-    color: #fabe00;
+    color: #FF4049;
     font-weight: bold;
 }
 
@@ -152,7 +152,7 @@
     height: 30px;
     font-size: 13px;
     font-weight: bold;
-    background: #fabe00;
+    background: #FF4049;
     color: #fff;
     border: 0;
     border-radius: 4%;
@@ -160,7 +160,7 @@
 }
 
 .main-content .car-container .submit-btn:hover {
-    background: #FF8650;
+    background: #FF5150;
 }
 
 /*注意事项*/
