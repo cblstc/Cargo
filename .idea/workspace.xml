@@ -2,18 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22cacc0c-7bba-4970-a239-8a0b30182dbb" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/css/common/jquery.dataTables.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/css/images/Sorting icons.psd" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/css/images/favicon.ico" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/css/images/sort_asc.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/css/images/sort_asc_disabled.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/css/images/sort_both.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/css/images/sort_desc.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/css/images/sort_desc_disabled.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/html/user/datatable_demo.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/js/common/jquery.dataTables.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/html/user/jsondemo/datatable_demo_1.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/html/user/jsondemo/datatable_demo_2.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/html/user/jsondemo/datatable_demo_3.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/html/user/jsondemo/datatable_demo_4.json" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/html/common/result.html" afterPath="$PROJECT_DIR$/html/common/result.html" />
+      <change beforePath="$PROJECT_DIR$/html/user/datatable_demo.json" afterPath="$PROJECT_DIR$/html/user/jsondemo/datatable_demo_0.json" />
       <change beforePath="$PROJECT_DIR$/html/user/userCenter.html" afterPath="$PROJECT_DIR$/html/user/userCenter.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -28,26 +22,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="carDetail.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/customer/carDetail.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="11" column="62" lean-forward="false" selection-start-line="11" selection-start-column="62" selection-end-line="11" selection-end-column="62" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="carDetail.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/carDetail.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1701">
-              <caret line="81" column="24" lean-forward="false" selection-start-line="81" selection-start-column="24" selection-end-line="81" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="orderPreview.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/customer/orderPreview.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -71,22 +45,12 @@
       <file leaf-file-name="userCenter.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/html/user/userCenter.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-462">
-              <caret line="47" column="33" lean-forward="false" selection-start-line="47" selection-start-column="33" selection-end-line="47" selection-end-column="33" />
+            <state relative-caret-position="101">
+              <caret line="121" column="34" lean-forward="true" selection-start-line="121" selection-start-column="34" selection-end-line="121" selection-end-column="34" />
               <folding>
                 <element signature="n#style#0;n#table#0;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1524195333190" expanded="true" signature="3557:3584" ph="..." />
+                <marker date="1524209888928" expanded="true" signature="3727:3754" ph="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="datatable_demo.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/user/datatable_demo.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="14" column="9" lean-forward="true" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -186,11 +150,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/css/userRightContent.css" />
-        <option value="$PROJECT_DIR$/js/authenticationAccount.js" />
-        <option value="$PROJECT_DIR$/css/userCenter.css" />
-        <option value="$PROJECT_DIR$/html/system/userList.html" />
-        <option value="$PROJECT_DIR$/css/system/userList.css" />
         <option value="$PROJECT_DIR$/css/system/carList.css" />
         <option value="$PROJECT_DIR$/html/system/renterList.html" />
         <option value="$PROJECT_DIR$/css/reset.css" />
@@ -236,6 +195,11 @@
         <option value="$PROJECT_DIR$/html/common/result.html" />
         <option value="$PROJECT_DIR$/json/datatable_chinese.json" />
         <option value="$PROJECT_DIR$/html/user/datatable_demo.json" />
+        <option value="$PROJECT_DIR$/html/user/datatable_demo_new.json" />
+        <option value="$PROJECT_DIR$/html/user/jsondemo/datatable_demo_0.json" />
+        <option value="$PROJECT_DIR$/html/user/jsondemo/datatable_demo_2.json" />
+        <option value="$PROJECT_DIR$/html/user/jsondemo/datatable_demo_3.json" />
+        <option value="$PROJECT_DIR$/html/user/jsondemo/datatable_demo_4.json" />
         <option value="$PROJECT_DIR$/html/user/userCenter.html" />
       </list>
     </option>
@@ -336,11 +300,11 @@
       <recent name="C:\Project\Html171114\Cargo\css\common" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Project\Html171114\Cargo\html\user\jsondemo" />
       <recent name="C:\Project\Html171114\Cargo\font" />
       <recent name="C:\Project\Html171114\Cargo\css\common\H-ui" />
       <recent name="C:\Project\Html171114\Cargo\images\system" />
       <recent name="C:\Project\Html171114\Cargo\js\common" />
-      <recent name="C:\Project\Html171114\Cargo\css\common" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -398,12 +362,12 @@
       <workItem from="1522225094326" duration="2289000" />
       <workItem from="1523173093852" duration="20014000" />
       <workItem from="1524095248478" duration="15818000" />
-      <workItem from="1524182525051" duration="12754000" />
+      <workItem from="1524182525051" duration="16033000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="227574000" />
+    <option name="totallyTimeSpent" value="230853000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -439,11 +403,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/css/common/H-ui/H-ui.min.css" />
-    <entry file="file://$PROJECT_DIR$/css/common/H-ui/H-ui.admin.css" />
-    <entry file="file://$PROJECT_DIR$/css/common/H-ui/iconfont.css" />
-    <entry file="file://$PROJECT_DIR$/js/common/H-ui/html5shiv.js" />
-    <entry file="file://$PROJECT_DIR$/css/common/H-ui/skin.css" />
     <entry file="file://$PROJECT_DIR$/css/common/H-ui/style.css" />
     <entry file="file://$PROJECT_DIR$/html/store/system-shielding.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -734,6 +693,11 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/images/choice-1.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/html/user/improveAccount.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="233">
@@ -742,21 +706,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/user/datatable_demo.json">
+    <entry file="file://$PROJECT_DIR$/html/user/jsondemo/datatable_demo_0.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="14" column="9" lean-forward="true" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+        <state relative-caret-position="126">
+          <caret line="6" column="22" lean-forward="true" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/user/jsondemo/datatable_demo_1.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="23" column="39" lean-forward="false" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/user/jsondemo/datatable_demo_2.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="17" column="39" lean-forward="false" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/user/jsondemo/datatable_demo_3.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="39" lean-forward="false" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/user/jsondemo/datatable_demo_4.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="23" column="39" lean-forward="false" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/html/user/userCenter.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-462">
-          <caret line="47" column="33" lean-forward="false" selection-start-line="47" selection-start-column="33" selection-end-line="47" selection-end-column="33" />
+        <state relative-caret-position="101">
+          <caret line="121" column="34" lean-forward="true" selection-start-line="121" selection-start-column="34" selection-end-line="121" selection-end-column="34" />
           <folding>
             <element signature="n#style#0;n#table#0;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1524195333190" expanded="true" signature="3557:3584" ph="..." />
+            <marker date="1524209888928" expanded="true" signature="3727:3754" ph="..." />
           </folding>
         </state>
       </provider>
