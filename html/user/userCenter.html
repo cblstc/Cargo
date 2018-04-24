@@ -16,6 +16,7 @@
     <script type="text/javascript" src="../../js/common/userLeftNav.js"></script>
     <!--<script type="text/javascript" src="../../js/userCenter.js"></script>-->
     <script type="text/javascript" src="../../js/common/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="../../js/layer/layer.js"></script>
 </head>
 <body>
     <div class="header-box"></div>
@@ -136,7 +137,8 @@
             {   // 操作方式
                 "render": function(data, type, row, meta) {
                     var btns = "<button class='btn btn-primary btn-xs' onclick=''>付款</button><br/>" +
-                        "<button class='btn btn-danger btn-xs' onclick=''>退款</button><br/>"
+                        "<button class='btn btn-danger btn-xs' onclick=''>退款</button><br/>" +
+                        "<button class='btn btn-info btn-xs' onclick='ev_comment_edit();'>评论</button><br/>";
                     return btns;
                 },
                 "targets": 10
@@ -175,6 +177,18 @@
         var state = value;
         var url = t.ajax.url("jsondemo/datatable_demo_" + state + ".json");
         url.load();
+    }
+
+    // 打开评论编辑窗口
+    function ev_comment_edit() {
+        // 弹出地图框
+        layer.open({
+            title: '评论编辑',
+            type: 1,
+            closeBtn: 1,  // 调试用
+            area: ['600px', '300px'], //宽高
+            content: '<div><textarea></textarea><br/></div>'
+        });
     }
     </script>
 </body>
