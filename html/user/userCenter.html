@@ -57,11 +57,11 @@
                             <th>时间</th>
                             <th>图片</th>
                             <th>门店</th>
-                            <!--<th>租赁时长</th>
+                            <th>租赁时长</th>
                             <th>日均价</th>
                             <th>基本保险</th>
                             <th>不计免赔险</th>
-                            <th>总计</th>-->
+                            <th>总计</th>
                             <th>订单状态</th>
                             <th>操作</th>
                         </tr>
@@ -90,6 +90,11 @@
             { "data": "time" },
             { "data": "photo" },
             { "data": null },
+            { "data": "totaltime" },
+            { "data": "price" },
+            { "data": "insurance" },
+            { "data": "nodeductibles" },
+            { "data": "total" },
             { "data": "state" },
             { "data": null }
         ],
@@ -126,16 +131,15 @@
                     }
                     return state;
                 },
-                "targets": 4
+                "targets": 9
             },
             {   // 操作方式
                 "render": function(data, type, row, meta) {
                     var btns = "<button class='btn btn-primary btn-xs' onclick=''>付款</button><br/>" +
-                        "<button class='btn btn-danger btn-xs' onclick=''>退款</button><br/>" +
-                        "<button class='btn btn-info btn-xs' onclick=''>订单详情</button>";
+                        "<button class='btn btn-danger btn-xs' onclick=''>退款</button><br/>"
                     return btns;
                 },
-                "targets": 5
+                "targets": 10
             }
         ],
 
