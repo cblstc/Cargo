@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>加盟</title>
+    <link rel="stylesheet"type="text/css" href="../../css/common/bootstrap.min.css">
+    <link rel="stylesheet"type="text/css" href="../../css/common/bootstrap-theme.min.css">
+
+    <link rel="stylesheet"type="text/css" href="../../css/common/reset.css">
+    <link rel="stylesheet"type="text/css" href="../../css/common/common.css">
+    <link rel="stylesheet"type="text/css" href="../../css/customer/joinUs.css">
+
+    <script type="text/javascript" src="../../js/common/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="../../js/layer/layer.js"></script>
+</head>
+<body>
+    <div class="header-box"></div>
+    <script>
+        $(".header-box").load("../common/public-header.html");
+    </script>
+
+    <h1>请填写加盟信息</h1>
+    <div class="login-01">
+        <form>
+            <ul>
+                <li class="first">
+                    <a href="#" class=" icon user"></a><input type="text" class="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" >
+                    <div class="clear"></div>
+                </li>
+                <li class="first">
+                    <a href="#" class=" icon email"></a><input type="text" class="text" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" >
+                    <div class="clear"></div>
+                </li>
+                <li class="first">
+                    <a href="#" class=" icon phone"></a><input type="text" class="text" value="Phone" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Phone';}" >
+                    <div class="clear"></div>
+                </li>
+                <li class="second">
+                    <a href="#" class=" icon msg"></a><textarea value="Message" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Comments';}">Comments</textarea>
+                    <div class="clear"></div>
+                </li>
+            </ul>
+            <input type="submit" onclick="myFunction()" value="Submit" >
+            <div class="clear"></div>
+        </form>
+    </div>
+
+    <div class="footer-box"></div>
+    <script>
+        $(".footer-box").load("../common/public-footer.html");
+    </script>
+</body>
+</html>
