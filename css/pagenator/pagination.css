@@ -87,3 +87,23 @@ input {
     color: #bdbdbd;
     font-size: 14px;
 }*/
+
+/* 车辆分页 start */
+.car-pagenator {
+    margin: 20px 20px 10px 0;
+}
+
+.car-tips {
+    margin: 0 20px 10px 0;
+}
+/* 车辆分页 end */
+
+/* 评论分页 start */
+.comment-pagenator {
+    margin: 0 65px 10px 0;
+}
+
+.comment-tips {
+    margin: 0 65px 20px 0;
+}
+/* 评论分页 end */

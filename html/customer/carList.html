@@ -134,12 +134,16 @@
                         <dl>
                             <dt class="store-title">门店地址：</dt>
                             <dd class="store-content">T3航站楼国内到达二楼7号出口左面柜台</dd>
+                            <dt class="store-title">门店详情：</dt>
+                            <dd class="store-content">武汉天河机场店欢迎您</dd>
+                            <dt class="store-title">交通指引：</dt>
+                            <dd class="store-content">地铁3号线</dd>
                             <dt class="store-title">营业时间：</dt>
                             <dd class="store-content">09:00-21:00</dd>
                             <dt class="store-title">门店电话：</dt>
                             <dd class="store-content">13432825705</dd>
                             <dt class="store-title">客户评价：</dt>
-                            <dd class="store-content clearfloat"><div class="comment-star left-float"></div>&nbsp;<span class="orange-text">3.0</span><a href="#" class="total-comment right-float">3000000条评论&gt;</a></dd>
+                            <dd class="store-content clearfloat"><div class="comment-star left-float"></div>&nbsp;<span class="orange-text">3.0</span><a href="javascript:void(0)" onclick="showComment('store');" class="total-comment right-float">3000000条评论&gt;</a></dd>
                         </dl>
                     </div>
                 </div>
@@ -154,7 +158,7 @@
                         <dd class="car-desc">三厢|1.5自动|5人</dd>
                         <dd class="car-gear-auto">自动挡</dd>
                         <!--<dd class="car-gear">手动挡</dd>-->
-                        <dd  class="car-comment"><a href="javascript:void(0)" onclick="showComment();">1000条评论</a></dd>
+                        <dd  class="car-comment"><a href="javascript:void(0)" onclick="showComment('car');">1000条评论</a></dd>
                     </dl>
                     <div class="car-price-box left-float">
                         <span class="car-price-text">&yen;83</span><span class="day-avg">/日均</span>
@@ -491,9 +495,11 @@
         });
 
         /* 显示评论 */
-        function showComment() {
+        function showComment(target) {
+            var title = target == "car" ? "汽车评论列表" : "门店评论列表";
+
             layer.open({
-                title: '评论列表',
+                title: title,
                 type: 1,
                 closeBtn: 1,  // 调试用
                 area: ['650px', '550px'], //宽高
