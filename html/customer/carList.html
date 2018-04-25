@@ -13,8 +13,8 @@
     <link rel="stylesheet"type="text/css" href="../../css/common/common.css">
     <link rel="stylesheet"type="text/css" href="../../css/common/showMap.css">
     <link rel="stylesheet"type="text/css" href="../../css/carList.css">
-    <link rel="stylesheet"type="text/css" href="../../css/common/comment.css">
     <link rel="stylesheet"type="text/css" href="../../css/pagenator/pagination.css">
+    <link rel="stylesheet"type="text/css" href="../../css/common/comment.css">
 
     <style>
         .choice-date-block, .choice-address-block {
@@ -44,6 +44,9 @@
     <script type="text/javascript" src="../../js/common/jquery.validation/1.14.0/jquery.validate.js"></script>
     <script type="text/javascript" src="../../js/common/jquery.validation/1.14.0/validate-methods.js"></script>
     <script type="text/javascript" src="../../js/common/jquery.validation/1.14.0/messages_zh.js"></script>
+    <script>
+
+    </script>
 </head>
 <body>
     <div class="header-box"></div>
@@ -52,8 +55,7 @@
     </script>
 
     <div class="address-date-choice">
-        <form action="#" id="date-choice-form"
-              method="post">
+        <form action="#" id="date-choice-form" method="post">
         <div class="public-container clearfloat">
             <img class="left-float car-to-img" src="../../images/car-to.jpg">
             <div class="choice-date left-float">
@@ -104,7 +106,7 @@
                     --><span class="price-0">0</span>&nbsp;&nbsp;<!--
                         --><span class="price-150">150</span>&nbsp;&nbsp;<!--
                         --><span class="price-300">300</span>&nbsp;&nbsp;<!--
-                        --><span class="price-500">500</span>&nbsp;&nbsp;<!--x
+                        --><span class="price-500">500</span>&nbsp;&nbsp;<!--
                         --><span class="price-500-plus">500+</span><!--
                         --></p>
                 </div>
@@ -144,6 +146,7 @@
             </div>
 
             <div class="car-content left-float">
+                <!-- 车辆一条记录: start -->
                 <div class="single-car clearfloat">
                     <img class="car-img left-float" src="../../images/car-1.jpg">
                     <dl class="car-desc-box left-float">
@@ -155,86 +158,66 @@
                     </dl>
                     <div class="car-price-box left-float">
                         <span class="car-price-text">&yen;83</span><span class="day-avg">/日均</span>
+
                     </div>
                     <div class="choice-btn-box left-float">
                         <button class="choice-btn" onclick="javascript:window.open('carDetail.html')">租&nbsp;车</button>
+                        <p class="remains">剩余100辆</p>
                     </div>
                 </div>
+                <!-- 车辆一条记录: end -->
+                <!-- 车辆一条记录: start -->
                 <div class="single-car clearfloat">
                     <img class="car-img left-float" src="../../images/car-1.jpg">
                     <dl class="car-desc-box left-float">
                         <dt class="car-name">别克英朗</dt>
                         <dd class="car-desc">三厢|1.5自动|5人</dd>
                         <dd class="car-gear-auto">自动挡</dd>
-                        <dd class="car-gear">手动挡</dd>
+                        <!--<dd class="car-gear">手动挡</dd>-->
+                        <dd  class="car-comment"><a href="javascript:void(0)" onclick="showComment();">1000条评论</a></dd>
                     </dl>
                     <div class="car-price-box left-float">
                         <span class="car-price-text">&yen;83</span><span class="day-avg">/日均</span>
+
                     </div>
                     <div class="choice-btn-box left-float">
-                        <button class="choice-btn">租&nbsp;车</button>
+                        <button class="choice-btn" onclick="javascript:window.open('carDetail.html')">租&nbsp;车</button>
+                        <p class="remains">剩余100辆</p>
                     </div>
                 </div>
+                <!-- 车辆一条记录: end -->
+                <!-- 车辆一条记录: start -->
                 <div class="single-car clearfloat">
                     <img class="car-img left-float" src="../../images/car-1.jpg">
                     <dl class="car-desc-box left-float">
                         <dt class="car-name">别克英朗</dt>
                         <dd class="car-desc">三厢|1.5自动|5人</dd>
                         <dd class="car-gear-auto">自动挡</dd>
-                        <dd class="car-gear">手动挡</dd>
+                        <!--<dd class="car-gear">手动挡</dd>-->
+                        <dd  class="car-comment"><a href="javascript:void(0)" onclick="showComment();">1000条评论</a></dd>
                     </dl>
                     <div class="car-price-box left-float">
                         <span class="car-price-text">&yen;83</span><span class="day-avg">/日均</span>
+
                     </div>
                     <div class="choice-btn-box left-float">
-                        <button class="choice-btn">租&nbsp;车</button>
+                        <button class="choice-btn" onclick="javascript:window.open('carDetail.html')">租&nbsp;车</button>
+                        <p class="remains">剩余100辆</p>
                     </div>
                 </div>
-                <div class="single-car clearfloat">
-                    <img class="car-img left-float" src="../../images/car-1.jpg">
-                    <dl class="car-desc-box left-float">
-                        <dt class="car-name">别克英朗</dt>
-                        <dd class="car-desc">三厢|1.5自动|5人</dd>
-                        <dd class="car-gear-auto">自动挡</dd>
-                        <dd class="car-gear">手动挡</dd>
-                    </dl>
-                    <div class="car-price-box left-float">
-                        <span class="car-price-text">&yen;83</span><span class="day-avg">/日均</span>
-                    </div>
-                    <div class="choice-btn-box left-float">
-                        <button class="choice-btn">租&nbsp;车</button>
-                    </div>
+                <!-- 车辆一条记录: end -->
+                <!-- 车辆分页 start -->
+                <div class="clearfloat"><div class="m-style car-pagenator right-float"></div></div>
+                <div class="clearfloat">
+                    <p class="car-tips right-float">
+                        总记录
+                        <span class="count">100</span>条，每页显示
+                        <span class="count">10</span>条，总页数为
+                        <span class="count">10</span>页
+                    </p>
                 </div>
-                <div class="single-car clearfloat">
-                    <img class="car-img left-float" src="../../images/car-1.jpg">
-                    <dl class="car-desc-box left-float">
-                        <dt class="car-name">别克英朗</dt>
-                        <dd class="car-desc">三厢|1.5自动|5人</dd>
-                        <dd class="car-gear-auto">自动挡</dd>
-                        <dd class="car-gear">手动挡</dd>
-                    </dl>
-                    <div class="car-price-box left-float">
-                        <span class="car-price-text">&yen;83</span><span class="day-avg">/日均</span>
-                    </div>
-                    <div class="choice-btn-box left-float">
-                        <button class="choice-btn">租&nbsp;车</button>
-                    </div>
-                </div>
-                <div class="single-car clearfloat">
-                    <img class="car-img left-float" src="../../images/car-1.jpg">
-                    <dl class="car-desc-box left-float">
-                        <dt class="car-name">别克英朗</dt>
-                        <dd class="car-desc">三厢|1.5自动|5人</dd>
-                        <dd class="car-gear-auto">自动挡</dd>
-                        <dd class="car-gear">手动挡</dd>
-                    </dl>
-                    <div class="car-price-box left-float">
-                        <span class="car-price-text">&yen;83</span><span class="day-avg">/日均</span>
-                    </div>
-                    <div class="choice-btn-box left-float">
-                        <button class="choice-btn">租&nbsp;车</button>
-                    </div>
-                </div>
+                <!-- 车辆分页 end -->
+
             </div>
         </div>
     </div>
@@ -244,226 +227,18 @@
         $(".footer-box").load("../common/public-footer.html");
     </script>
 
-    <!-- 评论弹框 -->
-    <div class="comment-box" style="display: none;">
-        <div class="commentAll">
-            所有评论
-            <div class="comment-show">
-                <div class="comment-show-con clearfix">
-                    <div class="comment-show-con-img pull-left">
-                        <img src="images/header-img-comment_03.png" alt="头像" onerror="this.src='../../images/user/head-if-non.png'">
-                    </div>
-                    <div class="comment-show-con-list pull-left clearfix">
-                        <div class="pl-text clearfix">
-                            <a href="#" class="comment-size-name">张三 : </a>
-                            <span class="my-pl-con">&nbsp;来啊 造作啊</span>
-                        </div>
-                        <div class="date-dz">
-                            <span class="date-dz-left pull-left comment-time">2017-5-2 11:11:39</span>
-                            <div class="date-dz-right pull-right comment-pl-block">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="comment-show">
-                <div class="comment-show-con clearfix">
-                    <div class="comment-show-con-img pull-left">
-                        <img src="images/header-img-comment_03.png" alt="头像" onerror="this.src='../../images/user/head-if-non.png'">
-                    </div>
-                    <div class="comment-show-con-list pull-left clearfix">
-                        <div class="pl-text clearfix">
-                            <a href="#" class="comment-size-name">张三 : </a>
-                            <span class="my-pl-con">&nbsp;来啊 造作啊</span>
-                        </div>
-                        <div class="date-dz">
-                            <span class="date-dz-left pull-left comment-time">2017-5-2 11:11:39</span>
-                            <div class="date-dz-right pull-right comment-pl-block">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="comment-show">
-                <div class="comment-show-con clearfix">
-                    <div class="comment-show-con-img pull-left">
-                        <img src="images/header-img-comment_03.png" alt="头像" onerror="this.src='../../images/user/head-if-non.png'">
-                    </div>
-                    <div class="comment-show-con-list pull-left clearfix">
-                        <div class="pl-text clearfix">
-                            <a href="#" class="comment-size-name">张三 : </a>
-                            <span class="my-pl-con">&nbsp;来啊 造作啊</span>
-                        </div>
-                        <div class="date-dz">
-                            <span class="date-dz-left pull-left comment-time">2017-5-2 11:11:39</span>
-                            <div class="date-dz-right pull-right comment-pl-block">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="comment-show">
-                <div class="comment-show-con clearfix">
-                    <div class="comment-show-con-img pull-left">
-                        <img src="images/header-img-comment_03.png" alt="头像" onerror="this.src='../../images/user/head-if-non.png'">
-                    </div>
-                    <div class="comment-show-con-list pull-left clearfix">
-                        <div class="pl-text clearfix">
-                            <a href="#" class="comment-size-name">张三 : </a>
-                            <span class="my-pl-con">&nbsp;来啊 造作啊</span>
-                        </div>
-                        <div class="date-dz">
-                            <span class="date-dz-left pull-left comment-time">2017-5-2 11:11:39</span>
-                            <div class="date-dz-right pull-right comment-pl-block">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="comment-show">
-                <div class="comment-show-con clearfix">
-                    <div class="comment-show-con-img pull-left">
-                        <img src="images/header-img-comment_03.png" alt="头像" onerror="this.src='../../images/user/head-if-non.png'">
-                    </div>
-                    <div class="comment-show-con-list pull-left clearfix">
-                        <div class="pl-text clearfix">
-                            <a href="#" class="comment-size-name">张三 : </a>
-                            <span class="my-pl-con">&nbsp;来啊 造作啊</span>
-                        </div>
-                        <div class="date-dz">
-                            <span class="date-dz-left pull-left comment-time">2017-5-2 11:11:39</span>
-                            <div class="date-dz-right pull-right comment-pl-block">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="comment-show">
-                <div class="comment-show-con clearfix">
-                    <div class="comment-show-con-img pull-left">
-                        <img src="images/header-img-comment_03.png" alt="头像" onerror="this.src='../../images/user/head-if-non.png'">
-                    </div>
-                    <div class="comment-show-con-list pull-left clearfix">
-                        <div class="pl-text clearfix">
-                            <a href="#" class="comment-size-name">张三 : </a>
-                            <span class="my-pl-con">&nbsp;来啊 造作啊</span>
-                        </div>
-                        <div class="date-dz">
-                            <span class="date-dz-left pull-left comment-time">2017-5-2 11:11:39</span>
-                            <div class="date-dz-right pull-right comment-pl-block">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="comment-show">
-                <div class="comment-show-con clearfix">
-                    <div class="comment-show-con-img pull-left">
-                        <img src="images/header-img-comment_03.png" alt="头像" onerror="this.src='../../images/user/head-if-non.png'">
-                    </div>
-                    <div class="comment-show-con-list pull-left clearfix">
-                        <div class="pl-text clearfix">
-                            <a href="#" class="comment-size-name">张三 : </a>
-                            <span class="my-pl-con">&nbsp;来啊 造作啊</span>
-                        </div>
-                        <div class="date-dz">
-                            <span class="date-dz-left pull-left comment-time">2017-5-2 11:11:39</span>
-                            <div class="date-dz-right pull-right comment-pl-block">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="comment-show">
-                <div class="comment-show-con clearfix">
-                    <div class="comment-show-con-img pull-left">
-                        <img src="images/header-img-comment_03.png" alt="头像" onerror="this.src='../../images/user/head-if-non.png'">
-                    </div>
-                    <div class="comment-show-con-list pull-left clearfix">
-                        <div class="pl-text clearfix">
-                            <a href="#" class="comment-size-name">张三 : </a>
-                            <span class="my-pl-con">&nbsp;来啊 造作啊</span>
-                        </div>
-                        <div class="date-dz">
-                            <span class="date-dz-left pull-left comment-time">2017-5-2 11:11:39</span>
-                            <div class="date-dz-right pull-right comment-pl-block">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="comment-show">
-                <div class="comment-show-con clearfix">
-                    <div class="comment-show-con-img pull-left">
-                        <img src="images/header-img-comment_03.png" alt="头像" onerror="this.src='../../images/user/head-if-non.png'">
-                    </div>
-                    <div class="comment-show-con-list pull-left clearfix">
-                        <div class="pl-text clearfix">
-                            <a href="#" class="comment-size-name">张三 : </a>
-                            <span class="my-pl-con">&nbsp;来啊 造作啊</span>
-                        </div>
-                        <div class="date-dz">
-                            <span class="date-dz-left pull-left comment-time">2017-5-2 11:11:39</span>
-                            <div class="date-dz-right pull-right comment-pl-block">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="comment-show">
-                <div class="comment-show-con clearfix">
-                    <div class="comment-show-con-img pull-left">
-                        <img src="images/header-img-comment_03.png" alt="头像" onerror="this.src='../../images/user/head-if-non.png'">
-                    </div>
-                    <div class="comment-show-con-list pull-left clearfix">
-                        <div class="pl-text clearfix">
-                            <a href="#" class="comment-size-name">张三 : </a>
-                            <span class="my-pl-con">&nbsp;来啊 造作啊</span>
-                        </div>
-                        <div class="date-dz">
-                            <span class="date-dz-left pull-left comment-time">2017-5-2 11:11:39</span>
-                            <div class="date-dz-right pull-right comment-pl-block">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        <!-- 分页 -->
-        <div class="clearfloat"><div class="m-style comment-pagenator right-float"></div></div>
-        <div class="clearfloat">
-            <p class="comment-tips right-float">
-                总记录
-                <span class="count">100</span>条，每页显示
-                <span class="count">10</span>条，总页数为
-                <span class="count">10</span>页
-            </p>
-        </div>
-    </div>
-
     <script>
-        /* 显示评分的星星 */
-        $('.comment-pl-block').raty({
-            starOn:'../../images/star-on.png',
-            starOff:'../../images/star-off.png',
-            hints: ['差', '一般', '好', '非常好', '全五星'],
-            halfShow: false,
-            score: 3,
-            readOnly: true,
-            click: function (score, evt) {
+        /* 显示车辆分页 */
+        $('.car-pagenator').pagination({
+            totalData: 100, // 总记录数
+            showData: 10,    // 每页显示记录数
+            mode: 'fixed',  // 固定显示多少页数
+            callback: function (api) {  // 回调函数
+                console.log(api.getCurrent());  // 当前页数
+                // @todo ajax分页
             }
         });
 
-        /* 显示分页 */
-        $('.comment-pagenator').pagination({
-            totalData: 100, // 总记录数
-            showData: 10,    // 每页显示记录数
-            mode: 'fixed'
-        });
-    </script>
-
-    <script>
         $(function() {
             // 现在加4个小时
             // var nowPlusFourHours = new Date((new Date() / 1000 / 3600 + 4) * 1000 * 3600);
@@ -651,8 +426,71 @@
             $(".storename").val($(storeNameLink).text());
             layer.closeAll();  // 关闭所有窗口
         }
-        
-        // 显示评论
+
+    </script>
+
+    <!-- 评论弹框 -->
+    <div class="comment-box" style="display: none;">
+        <div class="commentAll">
+            所有评论
+            <div class="comment-show">
+                <div class="comment-show-con clearfix">
+                    <div class="comment-show-con-img pull-left">
+                        <img src="images/header-img-comment_03.png" alt="头像" onerror="this.src='../../images/user/head-if-non.png'">
+                    </div>
+                    <div class="comment-show-con-list pull-left clearfix">
+                        <div class="pl-text clearfix">
+                            <a href="#" class="comment-size-name">张三 : </a>
+                            <span class="my-pl-con">&nbsp;来啊 造作啊</span>
+                        </div>
+                        <div class="date-dz">
+                            <span class="date-dz-left pull-left comment-time">2017-5-2 11:11:39</span>
+                            <div class="date-dz-right pull-right comment-pl-block">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- 评论分页 start -->
+        <div class="clearfloat"><div class="m-style comment-pagenator right-float"></div></div>
+        <div class="clearfloat">
+            <p class="comment-tips right-float">
+                总记录
+                <span class="count">100</span>条，每页显示
+                <span class="count">10</span>条，总页数为
+                <span class="count">10</span>页
+            </p>
+        </div>
+        <!-- 评论分页 end -->
+    </div>
+
+    <script>
+        /* 显示评分的星星 */
+        $('.comment-pl-block').raty({
+            starOn:'../../images/star-on.png',
+            starOff:'../../images/star-off.png',
+            hints: ['差', '一般', '好', '非常好', '全五星'],
+            halfShow: false,
+            score: 3,
+            readOnly: true,
+            click: function (score, evt) {
+            }
+        });
+
+        /* 显示分页 */
+        $('.comment-pagenator').pagination({
+            totalData: 100, // 总记录数
+            showData: 10,    // 每页显示记录数
+            mode: 'fixed',  // 固定显示多少页数
+            callback: function (api) {  // 回调函数
+                console.log(api.getCurrent());  // 当前页数
+                // @todo ajax分页
+            }
+        });
+
+        /* 显示评论 */
         function showComment() {
             layer.open({
                 title: '评论列表',

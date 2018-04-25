@@ -3,7 +3,6 @@
     position: relative;
     text-align: center;
     zoom: 1;
-    margin: 0 65px 10px 0;
 }
 
 .m-style:before,
@@ -61,10 +60,6 @@
     font-family: "Simsun";
     font-size: 16px;
     font-weight: bold;
-}
-
-.comment-tips {
-    margin: 0 65px 20px 0;
 }
 
 .now,

@@ -110,9 +110,10 @@ body {
 /* 中间左边 */
 .car-select .car-filter {
     width: 270px;
-    height: 100px;
+    /*height: 100px;*/
     margin-top: 20px;
     margin-right: 10px;
+    margin-bottom: 20px;
     background: #fff;
 }
 
@@ -189,7 +190,6 @@ body {
 .car-select .car-filter .car-store {
     width: 270px;
     background: #fff;
-    margin-bottom: 20px;
     overflow: hidden;
 }
 
@@ -304,7 +304,7 @@ body {
 }
 
 .car-select .car-content .single-car .car-comment a {
-    color: #4e89be;
+    color: #93939e;
 }
 /* 评论链接 end */
 
@@ -345,3 +345,28 @@ body {
 .car-select .car-content .single-car .choice-btn:hover {
     background: #FF5150;
 }
+
+.car-select .car-content .single-car .remains {
+    font-size: 14px;
+    margin: 18px 0 0 10px;
+}
+
+/* 车辆分页 start */
+.car-pagenator {
+    margin: 20px 20px 10px 0;
+}
+
+.car-tips {
+    margin: 0 20px 10px 0;
+}
+/* 车辆分页 end */
+
+/* 评论分页 start */
+.comment-pagenator {
+    margin: 0 65px 10px 0;
+}
+
+.comment-tips {
+    margin: 0 65px 20px 0;
+}
+/* 评论分页 end */
