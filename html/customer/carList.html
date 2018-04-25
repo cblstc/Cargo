@@ -13,6 +13,8 @@
     <link rel="stylesheet"type="text/css" href="../../css/common/common.css">
     <link rel="stylesheet"type="text/css" href="../../css/common/showMap.css">
     <link rel="stylesheet"type="text/css" href="../../css/carList.css">
+    <link rel="stylesheet"type="text/css" href="../../css/common/comment.css">
+    <link rel="stylesheet"type="text/css" href="../../css/pagenator/pagination.css">
 
     <style>
         .choice-date-block, .choice-address-block {
@@ -26,6 +28,10 @@
             color: #ef392b;
             font-size: 12px;
         }
+        /* 处理评分星星空格宽度太大 */
+        .comment-pl-block img {
+            margin-right: -8px;
+        }
     </style>
     <script type="text/javascript" src="../../js/common/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="../../js/common/bootstrap-datetimepicker.min.js"></script>
@@ -34,6 +40,7 @@
     <script type="text/javascript" src="../../js/layer/layer.js"></script>
     <script type="text/javascript" src="../../js/common/jquery-ui.min.js"></script>
     <script type="text/javascript" src="../../js/carList.js"></script>
+    <script type="text/javascript" src="../../js/pagenator/jquery.pagination.js"></script>
     <script type="text/javascript" src="../../js/common/jquery.validation/1.14.0/jquery.validate.js"></script>
     <script type="text/javascript" src="../../js/common/jquery.validation/1.14.0/validate-methods.js"></script>
     <script type="text/javascript" src="../../js/common/jquery.validation/1.14.0/messages_zh.js"></script>
@@ -143,7 +150,8 @@
                         <dt class="car-name">别克英朗</dt>
                         <dd class="car-desc">三厢|1.5自动|5人</dd>
                         <dd class="car-gear-auto">自动挡</dd>
-                        <dd class="car-gear">手动挡</dd>
+                        <!--<dd class="car-gear">手动挡</dd>-->
+                        <dd  class="car-comment"><a href="javascript:void(0)" onclick="showComment();">1000条评论</a></dd>
                     </dl>
                     <div class="car-price-box left-float">
                         <span class="car-price-text">&yen;83</span><span class="day-avg">/日均</span>
@@ -234,6 +242,225 @@
     <div class="footer-box"></div>
     <script>
         $(".footer-box").load("../common/public-footer.html");
+    </script>
+
+    <!-- 评论弹框 -->
+    <div class="comment-box" style="display: none;">
+        <div class="commentAll">
+            所有评论
+            <div class="comment-show">
+                <div class="comment-show-con clearfix">
+                    <div class="comment-show-con-img pull-left">
+                        <img src="images/header-img-comment_03.png" alt="头像" onerror="this.src='../../images/user/head-if-non.png'">
+                    </div>
+                    <div class="comment-show-con-list pull-left clearfix">
+                        <div class="pl-text clearfix">
+                            <a href="#" class="comment-size-name">张三 : </a>
+                            <span class="my-pl-con">&nbsp;来啊 造作啊</span>
+                        </div>
+                        <div class="date-dz">
+                            <span class="date-dz-left pull-left comment-time">2017-5-2 11:11:39</span>
+                            <div class="date-dz-right pull-right comment-pl-block">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="comment-show">
+                <div class="comment-show-con clearfix">
+                    <div class="comment-show-con-img pull-left">
+                        <img src="images/header-img-comment_03.png" alt="头像" onerror="this.src='../../images/user/head-if-non.png'">
+                    </div>
+                    <div class="comment-show-con-list pull-left clearfix">
+                        <div class="pl-text clearfix">
+                            <a href="#" class="comment-size-name">张三 : </a>
+                            <span class="my-pl-con">&nbsp;来啊 造作啊</span>
+                        </div>
+                        <div class="date-dz">
+                            <span class="date-dz-left pull-left comment-time">2017-5-2 11:11:39</span>
+                            <div class="date-dz-right pull-right comment-pl-block">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="comment-show">
+                <div class="comment-show-con clearfix">
+                    <div class="comment-show-con-img pull-left">
+                        <img src="images/header-img-comment_03.png" alt="头像" onerror="this.src='../../images/user/head-if-non.png'">
+                    </div>
+                    <div class="comment-show-con-list pull-left clearfix">
+                        <div class="pl-text clearfix">
+                            <a href="#" class="comment-size-name">张三 : </a>
+                            <span class="my-pl-con">&nbsp;来啊 造作啊</span>
+                        </div>
+                        <div class="date-dz">
+                            <span class="date-dz-left pull-left comment-time">2017-5-2 11:11:39</span>
+                            <div class="date-dz-right pull-right comment-pl-block">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="comment-show">
+                <div class="comment-show-con clearfix">
+                    <div class="comment-show-con-img pull-left">
+                        <img src="images/header-img-comment_03.png" alt="头像" onerror="this.src='../../images/user/head-if-non.png'">
+                    </div>
+                    <div class="comment-show-con-list pull-left clearfix">
+                        <div class="pl-text clearfix">
+                            <a href="#" class="comment-size-name">张三 : </a>
+                            <span class="my-pl-con">&nbsp;来啊 造作啊</span>
+                        </div>
+                        <div class="date-dz">
+                            <span class="date-dz-left pull-left comment-time">2017-5-2 11:11:39</span>
+                            <div class="date-dz-right pull-right comment-pl-block">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="comment-show">
+                <div class="comment-show-con clearfix">
+                    <div class="comment-show-con-img pull-left">
+                        <img src="images/header-img-comment_03.png" alt="头像" onerror="this.src='../../images/user/head-if-non.png'">
+                    </div>
+                    <div class="comment-show-con-list pull-left clearfix">
+                        <div class="pl-text clearfix">
+                            <a href="#" class="comment-size-name">张三 : </a>
+                            <span class="my-pl-con">&nbsp;来啊 造作啊</span>
+                        </div>
+                        <div class="date-dz">
+                            <span class="date-dz-left pull-left comment-time">2017-5-2 11:11:39</span>
+                            <div class="date-dz-right pull-right comment-pl-block">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="comment-show">
+                <div class="comment-show-con clearfix">
+                    <div class="comment-show-con-img pull-left">
+                        <img src="images/header-img-comment_03.png" alt="头像" onerror="this.src='../../images/user/head-if-non.png'">
+                    </div>
+                    <div class="comment-show-con-list pull-left clearfix">
+                        <div class="pl-text clearfix">
+                            <a href="#" class="comment-size-name">张三 : </a>
+                            <span class="my-pl-con">&nbsp;来啊 造作啊</span>
+                        </div>
+                        <div class="date-dz">
+                            <span class="date-dz-left pull-left comment-time">2017-5-2 11:11:39</span>
+                            <div class="date-dz-right pull-right comment-pl-block">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="comment-show">
+                <div class="comment-show-con clearfix">
+                    <div class="comment-show-con-img pull-left">
+                        <img src="images/header-img-comment_03.png" alt="头像" onerror="this.src='../../images/user/head-if-non.png'">
+                    </div>
+                    <div class="comment-show-con-list pull-left clearfix">
+                        <div class="pl-text clearfix">
+                            <a href="#" class="comment-size-name">张三 : </a>
+                            <span class="my-pl-con">&nbsp;来啊 造作啊</span>
+                        </div>
+                        <div class="date-dz">
+                            <span class="date-dz-left pull-left comment-time">2017-5-2 11:11:39</span>
+                            <div class="date-dz-right pull-right comment-pl-block">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="comment-show">
+                <div class="comment-show-con clearfix">
+                    <div class="comment-show-con-img pull-left">
+                        <img src="images/header-img-comment_03.png" alt="头像" onerror="this.src='../../images/user/head-if-non.png'">
+                    </div>
+                    <div class="comment-show-con-list pull-left clearfix">
+                        <div class="pl-text clearfix">
+                            <a href="#" class="comment-size-name">张三 : </a>
+                            <span class="my-pl-con">&nbsp;来啊 造作啊</span>
+                        </div>
+                        <div class="date-dz">
+                            <span class="date-dz-left pull-left comment-time">2017-5-2 11:11:39</span>
+                            <div class="date-dz-right pull-right comment-pl-block">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="comment-show">
+                <div class="comment-show-con clearfix">
+                    <div class="comment-show-con-img pull-left">
+                        <img src="images/header-img-comment_03.png" alt="头像" onerror="this.src='../../images/user/head-if-non.png'">
+                    </div>
+                    <div class="comment-show-con-list pull-left clearfix">
+                        <div class="pl-text clearfix">
+                            <a href="#" class="comment-size-name">张三 : </a>
+                            <span class="my-pl-con">&nbsp;来啊 造作啊</span>
+                        </div>
+                        <div class="date-dz">
+                            <span class="date-dz-left pull-left comment-time">2017-5-2 11:11:39</span>
+                            <div class="date-dz-right pull-right comment-pl-block">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="comment-show">
+                <div class="comment-show-con clearfix">
+                    <div class="comment-show-con-img pull-left">
+                        <img src="images/header-img-comment_03.png" alt="头像" onerror="this.src='../../images/user/head-if-non.png'">
+                    </div>
+                    <div class="comment-show-con-list pull-left clearfix">
+                        <div class="pl-text clearfix">
+                            <a href="#" class="comment-size-name">张三 : </a>
+                            <span class="my-pl-con">&nbsp;来啊 造作啊</span>
+                        </div>
+                        <div class="date-dz">
+                            <span class="date-dz-left pull-left comment-time">2017-5-2 11:11:39</span>
+                            <div class="date-dz-right pull-right comment-pl-block">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- 分页 -->
+        <div class="clearfloat"><div class="m-style comment-pagenator right-float"></div></div>
+        <div class="clearfloat">
+            <p class="comment-tips right-float">
+                总记录
+                <span class="count">100</span>条，每页显示
+                <span class="count">10</span>条，总页数为
+                <span class="count">10</span>页
+            </p>
+        </div>
+    </div>
+
+    <script>
+        /* 显示评分的星星 */
+        $('.comment-pl-block').raty({
+            starOn:'../../images/star-on.png',
+            starOff:'../../images/star-off.png',
+            hints: ['差', '一般', '好', '非常好', '全五星'],
+            halfShow: false,
+            score: 3,
+            readOnly: true,
+            click: function (score, evt) {
+            }
+        });
+
+        /* 显示分页 */
+        $('.comment-pagenator').pagination({
+            totalData: 100, // 总记录数
+            showData: 10,    // 每页显示记录数
+            mode: 'fixed'
+        });
     </script>
 
     <script>
@@ -423,6 +650,20 @@
             // alert($(storeNameLink).text());
             $(".storename").val($(storeNameLink).text());
             layer.closeAll();  // 关闭所有窗口
+        }
+        
+        // 显示评论
+        function showComment() {
+            layer.open({
+                title: '评论列表',
+                type: 1,
+                closeBtn: 1,  // 调试用
+                area: ['650px', '550px'], //宽高
+                content: $('.comment-box'),
+                cancel: function(index, layero) {
+                    $(".comment-box").css("display", "none");  // 隐藏评论表单
+                }
+            });
         }
     </script>
 </body>

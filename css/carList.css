@@ -298,6 +298,16 @@ body {
     text-align: center;
 }
 
+/* 评论链接 start */
+.car-select .car-content .single-car .car-comment {
+    margin-top: 10px;
+}
+
+.car-select .car-content .single-car .car-comment a {
+    color: #4e89be;
+}
+/* 评论链接 end */
+
 .car-select .car-content .single-car .car-price-box {
     width: 230px;
     height: 130px;

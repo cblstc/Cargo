@@ -11,12 +11,24 @@
     <link rel="stylesheet"type="text/css" href="../../css/common/userLeftNav.css">
     <!--<link rel="stylesheet"type="text/css" href="../../css/userRightContent.css">-->
     <link rel="stylesheet"type="text/css" href="../../css/common/userTopNav.css">
+    <link rel="stylesheet"type="text/css" href="../../css/user/userCenter.css">
     <link rel="stylesheet"type="text/css" href="../../css/common/jquery.dataTables.min.css">
+    <link rel="stylesheet"type="text/css" href="../../css/common/jquery.raty.css">
+
+    <style>
+        /* 处理评分星星空格宽度太大 */
+        .comment-star img {
+            margin-right: -8px;
+        }
+    </style>
+
     <script type="text/javascript" src="../../js/common/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="../../js/common/userLeftNav.js"></script>
     <!--<script type="text/javascript" src="../../js/userCenter.js"></script>-->
     <script type="text/javascript" src="../../js/common/jquery.dataTables.min.js"></script>
     <script type="text/javascript" src="../../js/layer/layer.js"></script>
+    <script type="text/javascript" src="../../js/common/jquery.raty.js"></script>
+
 </head>
 <body>
     <div class="header-box"></div>
@@ -181,15 +193,64 @@
 
     // 打开评论编辑窗口
     function ev_comment_edit() {
-        // 弹出地图框
         layer.open({
             title: '评论编辑',
             type: 1,
-            closeBtn: 1,  // 调试用
-            area: ['600px', '300px'], //宽高
-            content: '<div><textarea></textarea><br/></div>'
+            closeBtn: 1,
+            area: ['550px', '350px'], //宽高
+            content: $('.comment-edit-box'),  // 加载评论表单
+            cancel: function(index, layero) {
+                $(".comment-edit-box").css("display", "none");  // 隐藏评论表单
+            }
         });
+
     }
+
+    /* 显示当前字符长度 */
+    function showCurrentLength(item) {
+        var currentLength = $(item).val().length;
+        var next = $(item).next();
+        $($(next).find("span").get(0)).text(currentLength);
+    }
+    </script>
+
+    <!-- 操作方式 - 隐藏 -->
+    <div class="op-box" style="display: none;">
+        <button class='btn btn-primary btn-xs' onclick=''>付款</button><br/>
+        <button class='btn btn-danger btn-xs' onclick=''>退款</button><br/>
+        <button class='btn btn-info btn-xs' onclick='ev_comment_edit();'>评论</button><br/>
+    </div>
+
+    <!-- 评论弹框 - 隐藏 -->
+    <form role="form" class="comment-edit-box" method="post" action="" style="display: none;">
+        <div class="form-group">
+            <label for="content">评分</label>
+            <div class="comment-star"></div>
+            <input type="hidden" name="star" class="star" />
+        </div>
+        <div class="form-group">
+            <label for="content">评论内容</label>
+            <div class="content-box"><textarea id="content" name="content" class="form-control content" maxlength="200" placeholder="填写评论，不超过200个字符" dragonfly="true" onKeyUp="showCurrentLength(this)"></textarea>
+                <p class="remains"><span>0</span>/200</p></div>
+            </div>
+        <div class="form-group">
+            <button class="btn btn-primary" type="submit">提交</button>
+        </div>
+    </form>
+
+    <script>
+        /* 显示评分的星星 */
+        $('.comment-star').raty({
+            starOn:'../../images/star-on.png',
+            starOff:'../../images/star-off.png',
+            hints: ['差', '一般', '好', '非常好', '全五星'],
+            halfShow: false,
+            score:3,
+            readOnly: false,
+            click: function (score, evt) {
+                $(".star").val(score);  // 把评分赋值给表单
+            }
+        });
     </script>
 </body>
 </html>
