@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>加盟列表</title>
+
+    <link rel="stylesheet" type="text/css" href="../../css/common/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../../css/common/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="../../css/themes/default/easyui.css" type="text/css">
+    <link rel="stylesheet" href="../../css/themes/icon.css" type="text/css">
+    <link rel="stylesheet" href="../../css/system/userList.css" type="text/css">
+
+    <link rel="stylesheet"type="text/css" href="../../css/common/reset.css">
+    <link rel="stylesheet"type="text/css" href="../../css/common/common.css">
+
+    <script type="text/javascript" src="../../js/common/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="../../js/layer/layer.js"></script>
+    <script type="text/javascript" src="../../js/common/jquery.easyui.min.js"></script>
+    <script type="text/javascript" src="../../js/common/easyui-loading.js"></script>
+</head>
+<body>
+    <table class="easyui-datagrid dg" width="100%" height="100%"
+           toolbar=".toolbar" rownumbers="true" fitColumns="false" singleSelect="true">
+        <thead>
+        <tr>
+            <th field="id" width="100">加盟编号</th>
+            <th field="company" width="150">公司</th>
+            <th field="name" width="100">姓名</th>
+            <th field="phone" width="100">联系电话</th>
+            <th field="email" width="150">邮箱</th>
+            <th field="note" width="300">备注</th>
+            <th field="status" width="60">状态</th>
+            <th field="operate" width="200">操作</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>1</td>
+            <td>广州市租车公司</td>
+            <td>陈世美</td>
+            <td>123123123213</td>
+            <td>12312321321@qq.com</td>
+            <td>我想加盟</td>
+            <td>已加盟</td>
+            <td>
+                <a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-ok" plain="true">通过</a>
+                <a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-no" plain="true">拒绝</a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <div class="toolbar" style="padding: 20px; position: relative;">
+        <img src="../../images/system/username.png"> <input class="name" placeholder="姓名查询">&nbsp;&nbsp;
+        <img src="../../images/system/phone.png"> <input class="phone" placeholder="联系电话查询">&nbsp;&nbsp;
+        <img src="../../images/system/status.png">
+        <select style="height: 22px;">
+            <option>请选择</option>
+            <option value="1">正在申请</option>
+            <option value="2">已加盟</option>
+            <option value="3">未加盟</option>
+        </select>&nbsp;&nbsp;
+        <input type="submit" value="查询" style="width: 40px; background:#0089dc; color: #fff; border: 0; border-radius: 3%;">
+    </div>
+
+    <div class="easyui-dialog dlg" style="width:500px;height:260px;padding:10px 20px;"
+         closed="true" buttons="#dlg-buttons" pagination="true">
+    </div>
+
+</body>
+</html>

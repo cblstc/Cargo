@@ -9,7 +9,7 @@
 
 .index-carousel .index-carousel-bg {
     height: 500px;
-    background-image: url("../images/pic2.jpg");
+    background-image: url("../../images/pic2.jpg");
     background-position: center center;
     background-repeat: no-repeat;
 }
@@ -168,16 +168,16 @@
 }
 
 .index-content .choice-img-1 {
-    background-image: url("../images/choice-1.png");
+    background-image: url("../../images/choice-1.png");
 }
 .index-content .choice-img-2 {
-    background-image: url("../images/choice-2.png");
+    background-image: url("../../images/choice-2.png");
 }
 .index-content .choice-img-3 {
-    background-image: url("../images/choice-3.png");
+    background-image: url("../../images/choice-3.png");
 }
 .index-content .choice-img-4 {
-    background-image: url("../images/choice-4.png");
+    background-image: url("../../images/choice-4.png");
 }
 
 .index-content .choice-desc {
